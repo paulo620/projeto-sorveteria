@@ -1,66 +1,49 @@
+import estilos from "./page.module.css";
 import Image from "next/image";
-import styles from "./page.module.css";
+
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className={estilos.main}>
+      <section className={estilos.section}>
+        <div className={estilos.container}>
+          <h1>SORVETERIA ARTESANAL</h1>
+        </div>
+      </section>
+      <section className={estilos.secao_sabores}>
+        <div className={estilos.container_imagem}>
+          <Image src="/banner-sabores.jpg" alt="Sorvete" layout="responsive" width={500} height={500} />
+        </div>
+        <div className={estilos.container_texto}>
+          <h2>Nossos Sabores</h2>
+          <span>Novos e deliciosos</span>
+          <p>Sorvete bom é aquele feito com os melhores ingredientes! Aqui na gelateria todos os nossos produtos são naturais, à base de frutas e sem nenhum conservante! Também temos opções sem lactose e sem açúcar. Venha conhecer e perceber que tem como o sorvete ser delicioso e saudável ao mesmo tempo!
           </p>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+      <section className={estilos.secao_sabores}>
+        <div className={estilos.container_texto}>
+          <h2>NOSSOS EVENTOS</h2>
+          <span>Delicias com sorvete!</span>
+          <p>Mais do que uma sorveteria, uma extensão da sua casa! Estamos aqui prontinhos para te atender e oferecer os melhores eventos com os melhores sorvete da sua vida! Venha nos conhecer e passar um tempo aqui com a gente.
+          </p>
         </div>
-      </main>
-    </div>
+        <div className={estilos.container_imagem}>
+          <Image src="/eventos-image.jpg" alt="Sorvete" layout="responsive" width={500} height={500} />
+        </div>
+      </section>
+      <section className={estilos.secao_sabores}>
+        <div className={estilos.container_imagem}>
+          <Image src="/sobre-image.jpg" alt="Sorvete" layout="responsive" width={500} height={500} />
+        </div>
+        <div className={estilos.container_texto}>
+          <h2>SOBRE NÓS</h2>
+          <span>Alegria em cada casquinha!</span>
+          <p>Venha tomar o melhor sorvete da região aqui com a gente! Nós estamos há anos no mercado produzindo o que tem de melhor para o 	nosso cliente e você não pode ficar fora dessa. Venha nos fazer uma visita e aproveite o melhor atendimento e o melhor sorvete da cidade.
+          </p>
+        </div>
+      </section>
+    </main>
+
   );
 }

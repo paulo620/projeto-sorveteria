@@ -1,0 +1,66 @@
+.main {
+    width: 100%;
+    height: auto;
+
+}
+
+.container_sobre {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 50px 20px;
+
+}
+
+.texto_sobre {
+    width: 100%;
+    text-align: center;
+
+}
+
+.texto_sobre h1 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 1rem;
+
+}
+
+.texto_sobre h2 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 3rem;
+}
+
+.container_sobre p {
+    font-size: 1.2rem;
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.imagens_sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem;
+}
+
+.imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_imagens {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
