@@ -63,7 +63,7 @@
 
     .container_rodape {
         justify-content: center;
-        gap: 24px;
+        gap: 24px 12px;
     }
 
     .logo_container {
@@ -71,7 +71,7 @@
     }
 
     .container_texto {
-        flex-basis: calc(50% - 12px);
+        flex: 0 1 calc((100% - 24px) / 3);
         min-height: 88px;
     }
 
