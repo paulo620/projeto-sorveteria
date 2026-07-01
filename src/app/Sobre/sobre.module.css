@@ -5,7 +5,8 @@
 }
 
 .container_sobre {
-    width: 1024px;
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 50px 20px;
 
@@ -63,4 +64,90 @@
     height: auto;
     margin: 0;
     padding: 0;
+}
+
+.container_imagens :global(img) {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1080px) {
+    .container_sobre {
+        padding: 44px 24px;
+    }
+
+    .texto_sobre h1 {
+        font-size: 2.25rem;
+    }
+
+    .texto_sobre h2 {
+        font-size: 1.4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .container_sobre p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container_sobre {
+        padding: 40px 20px;
+    }
+
+    .container_imagens {
+        flex-wrap: wrap;
+    }
+
+    .imagem {
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_sobre {
+        padding: 36px 16px;
+    }
+
+    .texto_sobre h1 {
+        font-size: 2rem;
+    }
+
+    .texto_sobre h2 {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .container_sobre p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .container_imagens {
+        flex-direction: column;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .container_sobre {
+        padding: 28px 14px;
+    }
+
+    .texto_sobre h1 {
+        font-size: 1.7rem;
+    }
+
+    .texto_sobre h2 {
+        font-size: 1.05rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container_sobre p {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
 }
